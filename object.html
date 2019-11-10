@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Create</h2>
+        <script>
+            var coworkers = {
+              "programmer" : "egoing",
+                "designer" : "leezche"
+            };
+            document.write("programmer : "+coworkers.programmer+"<br>");
+            coworkers.bookkeeper = "duru";
+            document.write("bookkeeper : "+coworkers.bookkeeper+"</br>");
+            coworkers["data scientist"] = "taeho";
+            document.write("data scientist : "+coworkers["data scientist"]+"</br>");
+        </script>
+        
+        <h2>Iterate</h2>
+        <script>
+            for(var key in coworkers){
+                document.write(key+"</br>");
+            }
+        </script>
+        <br>
+        <script>
+            for(var key in coworkers){
+                document.write(coworkers[key]+"</br>");
+            }
+        </script>
+        
+        <h2>Property & Method</h2>
+        <script>
+            coworkers.showAll = function(){
+                for(var key in this){
+                    document.write(key+" : "+this[key]+"<br>");
+                }
+            }
+            coworkers.showAll();    //coworkers.객체안에 showAll함수도 포함되어 있어 showAll함수도 출력
+        </script>
+    </body>
+</html>

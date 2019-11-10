@@ -3,15 +3,34 @@
     <head>
         <title>WEB1 - Welcome</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    <!--jQuery-->
+        <script src="colors.js"></script>
     </head>
 
     <body>
-        <h1><a href="1_coding.html">WEB</a></h1>
-        <ul>
-            <li><a href="2_html.html">1.HTML</a></li>
-            <li><a href="2_CSS.html">2.CSS</a></li>
-            <li><a href="2_JAVASCRIPT.html">3.JAVASCRIPT</a></li>   
-        </ul>
+        <h1><a href="1_coding.html" id="main">WEB</a></h1>
+        
+        <div id="grid">            
+            <ul>
+                <li><a href="2_html.html">1.HTML</a></li>
+                <li><a href="2_CSS.html">2.CSS</a></li>
+                <li><a href="2_JAVASCRIPT.html">3.JAVASCRIPT</a></li>   
+            </ul>
+            
+            <div class="area">
+                <input type="button" value="night" onclick="
+                NightMode(this);
+                ">
+                
+                <h2>WEB</h2>
+                
+                웹(web)은 World Wide Web의 줄임말로서 인터넷 상에서 동작하는 하나의 서비스입니다.
+                웹을 이해하기 위해서 반드시 알아야 하는 것이 바로 하이퍼텍스트(Hyper Text)입니다. 온라인 쇼핑몰을 이용해 옷을 구매한다고 예를 들어봅시다. 인터넷 익스플로러나 구글 크롬과 같은 브라우저를 통해 온라인 쇼핑몰에 접속합니다. 이후 원하는 옷을 찾기 위해 몇 번 클릭하는 과정을 거치게 됩니다. 카테고리에서 '상의'를 누르면 '상의'만 모아져 있는 페이지로 연결됩니다. 연결된 페이지에서 '반팔'을 누르면 반팔만 모아져 있는 페이지로 연결되죠. 이처럼 클릭하면 무언가로 연결되는 것이 바로 하이퍼텍스트의 역할입니다.
+            </div>
+        </div>
+        
+
 
         
     </body>
